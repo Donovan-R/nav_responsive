@@ -1,0 +1,144 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: skyblue;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.75rem;
+}
+
+.nav-entire {
+  max-width: 100%;
+  height: auto;
+  background: darkcyan;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 6px 13px 1px rgba(239,23,210,0.75);
+}
+
+.nav-entire span {
+  font-size: 3rem;
+  color: rgb(59, 59, 203);
+  text-shadow: -5px 4px 10px rgba(16,14,14,0.6);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  transition: 0.75s;
+}
+
+.toggle-btn:hover {
+  transform: rotate(90deg);
+ 
+}
+
+.nav-entire i {
+  font-size: 3rem;
+}
+
+.nav-entire a {
+  text-decoration: none;
+}
+
+.links a {
+  color: black;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.3rem 1rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition:0.5s;
+}
+
+.links a:hover {
+  background: lightblue;
+  color: purple;
+  padding-left: 2rem;
+  transition: 1s;
+}
+
+.show-links {
+  height: 10rem;
+  transition:0.5s;
+}
+
+.social-icons {
+  display: none;
+  list-style: none;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-entire {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+    text-decoration: none; 
+    transition: 1s;
+  }
+  .links a:hover {
+    padding-top:1rem;
+    background: transparent;
+    text-shadow: -19px 14px 10px rgba(16,14,14,0.6);
+    font-size: 2.5rem;
+   
+  }
+  .social-icons {
+    display: flex;
+    list-style: none;
+  }
+
+  .social-icons i {
+    font-size: 2rem;
+    transition: 0.5s;
+  }
+
+  .social-icons a {
+    color: black;
+    margin: 0 0.75rem;
+    transition: 0.5s;
+  }
+  .social-icons a:hover {
+    color: white;
+   
+  }
+
+  .social-icons i:hover{
+    font-size: 3rem;
+    background-color: purple;
+  }
